@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "main.py", line 109, in <module>
+    main()
+  File "main.py", line 104, in main
+    wd=args.wd)
+  File "main.py", line 68, in train_network
+    momentum=momentum, gamma=gamma, wd=wd)
+  File "/home/nimroda/dpa_balance/src/NeuralNet.py", line 140, in train
+    self._train_step(train_gen, epoch, self.optimizer, iterations=iterations)
+  File "/home/nimroda/dpa_balance/src/NeuralNet.py", line 173, in _train_step
+    output = self.parallel_model(input)
+  File "/home/nimroda/dynamic/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/nimroda/dynamic/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/home/nimroda/dynamic/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/nimroda/dynamic/lib/python3.6/site-packages/torch/nn/modules/batchnorm.py", line 84, in forward
+    self._check_input_dim(input)
+  File "/home/nimroda/dynamic/lib/python3.6/site-packages/torch/nn/modules/batchnorm.py", line 250, in _check_input_dim
+    .format(input.dim()))
+ValueError: expected 4D input (got 3D input)
